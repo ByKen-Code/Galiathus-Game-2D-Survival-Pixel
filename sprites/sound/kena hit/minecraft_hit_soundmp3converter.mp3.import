@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgeuif3y3dv8x"
+path="res://.godot/imported/minecraft_hit_soundmp3converter.mp3-a5bd8a171a847dc50303bec0dd0cceda.mp3str"
+
+[deps]
+
+source_file="res://sprites/sound/kena hit/minecraft_hit_soundmp3converter.mp3"
+dest_files=["res://.godot/imported/minecraft_hit_soundmp3converter.mp3-a5bd8a171a847dc50303bec0dd0cceda.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://b5ghgrhh4afwt"]
+
+[ext_resource type="Script" uid="uid://cq7dgj5q6dfku" path="res://main_menu.gd" id="1_glbon"]
+[ext_resource type="Texture2D" uid="uid://kkk5d7jy5kxs" path="res://sprites/UI/background main menu/Background.png" id="2_qe12f"]
+[ext_resource type="Texture2D" uid="uid://blbudbpflp44n" path="res://sprites/UI/Button/play/play button/play.png" id="3_8qtwp"]
+[ext_resource type="Texture2D" uid="uid://cls85t4tsoquv" path="res://sprites/UI/Button/exit/New Piskel-1.png.png" id="3_jix8l"]
+[ext_resource type="Texture2D" uid="uid://ldif5wdjwawk" path="res://sprites/UI/Button/play/play button/play1.png" id="4_dy7ct"]
+[ext_resource type="Texture2D" uid="uid://ereq3jhy3t8f" path="res://sprites/UI/Button/exit/New Piskel-1.png (1).png" id="4_glbon"]
+[ext_resource type="FontFile" uid="uid://dhjv8l5ls48rd" path="res://sprites/UI/font/Minecraft.ttf" id="7_8qtwp"]
+[ext_resource type="AudioStream" uid="uid://b57mah84lj8ua" path="res://sprites/sound/musik/musik main menu/xDeviruchi - Title Theme .wav" id="8_dy7ct"]
+
+[node name="Main_Menu" type="Control" unique_id=511505659]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_glbon")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1190702207]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_qe12f")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PlayButton" type="TextureButton" parent="." unique_id=1664992612]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 43.005
+offset_top = -131.78
+offset_right = 118.005005
+offset_bottom = -99.77994
+grow_vertical = 2
+scale = Vector2(4.484, 3.276)
+texture_normal = ExtResource("3_8qtwp")
+texture_pressed = ExtResource("4_dy7ct")
+
+[node name="ExitButton" type="TextureButton" parent="." unique_id=715699623]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 102.185
+offset_top = -18.315002
+offset_right = 182.18518
+offset_bottom = 21.684998
+grow_vertical = 2
+scale = Vector2(2.58, 2.46)
+texture_normal = ExtResource("3_jix8l")
+texture_pressed = ExtResource("4_glbon")
+
+[node name="HighScoreText" type="Label" parent="." unique_id=2058228246]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -393.74
+offset_top = 22.26
+offset_right = -287.7398
+offset_bottom = 38.26001
+grow_horizontal = 0
+scale = Vector2(3.535, 4.006)
+theme_override_colors/font_color = Color(0.9137255, 0.80784315, 0.4862745, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("7_8qtwp")
+text = "High Score : 0"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=90987941]
+stream = ExtResource("8_dy7ct")
+volume_db = -2.0
+autoplay = true
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

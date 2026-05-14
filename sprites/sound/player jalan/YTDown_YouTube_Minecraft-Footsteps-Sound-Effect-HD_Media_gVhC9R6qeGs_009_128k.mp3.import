@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjdlrflkvqan3"
+path="res://.godot/imported/YTDown_YouTube_Minecraft-Footsteps-Sound-Effect-HD_Media_gVhC9R6qeGs_009_128k.mp3-8543efd1a2fe6d379b816575bc473df5.mp3str"
+
+[deps]
+
+source_file="res://sprites/sound/player jalan/YTDown_YouTube_Minecraft-Footsteps-Sound-Effect-HD_Media_gVhC9R6qeGs_009_128k.mp3"
+dest_files=["res://.godot/imported/YTDown_YouTube_Minecraft-Footsteps-Sound-Effect-HD_Media_gVhC9R6qeGs_009_128k.mp3-8543efd1a2fe6d379b816575bc473df5.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
