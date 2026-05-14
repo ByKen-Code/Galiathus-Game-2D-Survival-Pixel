@@ -19,7 +19,16 @@ Survive endless waves of slimes, fight enemies, and try to get the highest score
 ---
 
 ## 📸 Screenshots
-(Add screenshots here)
+
+### Main Menu
+![menu](menu.png)
+
+### GamePlay
+![gameplay1](gameplay1.png)
+![gameplay2](gameplay2.png)
+
+### GameOver
+![gameover](gameover.png)
 
 ---
 
